@@ -1,0 +1,643 @@
+                                                                  /*GENEREL*/
+  body{
+    background-image: url(../image/baggrund.svg);
+  }
+
+                                                                   /*LOGO*/  
+    .logo {
+      min-width: 100px;
+      max-width: 150px;
+      display: flex;
+      margin-top: 30px;
+    }
+
+    @media screen and (min-width: 700px){
+      .logo{
+          margin-top: 20px;
+      }
+    }
+
+    @media screen and (min-width: 800px){
+      .logo{
+          margin-top: 10px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      .logo{
+          margin-top: 0px;
+      }
+    }
+
+                                                                /*NAVIGATION*/ 
+    a{
+      color: #FFFFFF;
+      text-decoration: none;
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    a:hover{
+      color: #E3DDD5;
+    }
+
+    .navigation {
+      padding: 20px;
+      font-size: 30px;
+      text-align: center; 
+    }
+
+    .navigation ul{
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+      margin-top: 0px;
+      justify-content: flex-end;
+    }
+
+    .navigation li{
+      flex-basis: 100%;
+      border: 1px solid #FFFFFF;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+    .navigation li:hover{
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+    }
+
+    @media screen and (min-width: 700px){
+      .navigation ul{
+          flex-wrap: nowrap;
+          margin-top: 50px;
+      }
+    }
+
+    .filled{
+      background: #FFFFFF;
+      border: 1px solid #FFFFFF;
+      color: #E3DDD5;
+    }
+
+                                                                 /*FOOTER*/  
+    .icon {
+      width: 30px;
+      margin-left: 5px;
+      margin-top: 15px;
+    } 
+
+    @media screen and (min-width: 700px){
+      .icon{
+        margin-top: 19px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      .icon{
+        margin-top: 23px;
+      }
+    }
+
+    .tekst {
+      margin: 20px;
+      text-align: left;
+    }
+
+                                                                  /*FONT*/
+    @font-face {
+      font-family: font;
+      src: url(EBGaramond-Regular.ttf);
+    }
+
+  /*H1 OG H6 SAMME, MEN I SORT*/
+    h1 {
+      font-family: font;
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    @media screen and (min-width: 700px){
+      h1{
+        font-size: 40px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      h1{
+        font-size: 50px;
+      }
+    }
+  /*-*/
+
+  /*H1 OG H6 SAMME, MEN I BEIGE*/
+    h6 {
+      color: #E3DDD5;
+      font-family: font;
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    @media screen and (min-width: 700px){
+      h6{
+        font-size: 40px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      h6{
+        font-size: 50px;
+      }
+    }
+  /*-*/
+
+  /*H2 OG .H2 SAMME, MEN SKULLE LINKES SOM CLASS*/
+    h2 {
+      font-family: font;
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    @media screen and (min-width: 700px){
+      h2{
+        font-size: 26px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      h2{
+        font-size: 32px;
+      }
+    }
+
+    .h2 {
+      font-family: font;
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    @media screen and (min-width: 700px){
+      .h2{
+        font-size: 26px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      .h2{
+        font-size: 32px;
+      }
+    }
+  /*-*/
+
+  /*H3, H4 OG H5 SAMME, MEN I BEIGE*/
+    h3 {
+      font-family: font;
+      font-size: 15px;
+      font-weight: 300;
+      color: #E3DDD5;
+    }
+
+    @media screen and (min-width: 700px){
+      h3{
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      h3{
+        font-size: 25px;
+      }
+    }
+  /*-*/
+
+  /*H3, H4 OG H5 SAMME, MEN I HVID*/
+    h4 {
+      font-family: font;
+      font-size: 15px;
+      font-weight: 300;
+      color: #FFFFFF;
+    }
+
+    @media screen and (min-width: 700px){
+      h4{
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      h4{
+        font-size: 25px;
+      }
+    }
+  /*-*/
+
+  /*H3, H4 OG H5 SAMME, MEN I SORT*/
+    h5 {
+      font-family: font;
+      font-size: 15px;
+      font-weight: 300;
+      color: black;
+    }
+
+    @media screen and (min-width: 700px){
+      h5{
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      h5{
+        font-size: 25px;
+      }
+    }
+  /*-*/
+    
+                                                              /*ANIMATIONER*/ 
+  /*PIKACHU*/
+    .pika{
+      width: 300px;
+      height: 300px;
+      background: url('../animationer/pika.png') 0 0 no-repeat;
+      animation: afspil 1s steps(5) infinite;
+    }
+
+    @keyframes afspil {
+        0%{background-position: 0px;}
+        100%{background-position: -1500px;}
+    }
+  /*-*/
+
+  /*LOGO*/
+    .jasmin{
+      width: 300px;
+      height: 300px;
+      background: url('../animationer/jasmin.png') 0 0 no-repeat;
+      animation: play 3s steps(20) infinite;
+    }
+
+    @keyframes play {
+      0%{background-position: 0px;}
+      100%{background-position: -6000px;}
+    }
+  /*-*/
+
+  /*ADAM*/
+    .video {
+      width: 300px;
+      height: 300px;
+    }
+  /*-*/
+
+                                                              /*INDEX.HTML*/ 
+  /*SØRGER FOR HVID LINJE UNDER OVERSKRIFT*/ 
+    .tekst1 {
+      text-align: center;
+      border-bottom: 1px solid #FFFFFF;
+    }
+  /*-*/
+
+  /*PORTRAIT AF JASMIN*/ 
+    .portrait {
+      width: 200px;
+      margin-top: -50px;
+    }
+
+    @media screen and (min-width: 700px){
+      .portrait{
+        width: 300px;
+        margin-top: -50px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      .portrait{
+        width: 400px;
+        margin-top: -100px;
+        margin-left: 50px;
+      }
+    }
+  /*-*/
+
+  /*TEKST OM JASMIN*/
+    .mig {
+      margin-left: 85px;
+      text-align: left;
+    }
+
+    @media screen and (min-width: 700px){
+      .mig{
+        margin-left: 120px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      .mig{
+        margin-left: 230px;
+      }
+    }
+    /*-*/
+
+                                                                  /*OM-MIG.HTML*/ 
+  /*KONTAKT KNAP*/
+    .kontakt-knap{
+      background-color: #E3DDD5;
+      text-decoration: #FFFFFF;
+      border: 1px solid #E3DDD5;
+    }
+
+    .kontakt-knap:hover{
+      background-color: #FFFFFF;
+      text-decoration: #E3DDD5;
+      border: 1px solid #E3DDD5;
+    }
+  /*-*/
+
+  /*BILLEDE SLIDER*/
+    .billeder {
+      position: relative;
+    }
+
+    .gallerimig{
+      width: 400px;
+      height: 600px;
+      background: url('../image/gallerimig.png') 0 0 no-repeat;
+      animation: igang 7.5s steps(5) infinite;
+    }
+
+    @keyframes igang {
+      0%{background-position: 0px;}
+      100%{background-position: -2000px;}
+    }
+  /*-*/
+
+  /*OVERLAY AF CREDIT TIL ANDREA OG OLIVER*/
+    .overgang {
+      position: absolute;
+      width: 360px;
+      top: 0px;
+      background: #e3ddd580;
+      transition: .5s ease;
+      opacity: 0;
+      padding: 20px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    
+    .billeder:hover .overgang {
+      position: absolute;
+      opacity: 1;
+      width: 360px;
+    }
+    /*-*/
+
+                                                                  /*KONTAKT.HTML*/ 
+  /*ICONER*/
+    .iconkontakt {
+      width: 10px;
+    } 
+
+    @media screen and (min-width: 700px){
+      .iconkontakt{
+        width: 20px;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      .iconkontakt{
+        width: 25px;
+      }
+    }
+  /*-*/
+
+                                                                  /*GRID*/  
+                                                              /*GRID HEADER*/ 
+    .grid-header {
+      background-image: url(../image/menulinje.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: grid;
+      grid-template-columns:25% 75%;
+      margin-top: -9px;
+      margin-left: -9px;
+      margin-right: -9px;
+    }
+  /*-*/
+
+                                                             /*GRID FOOTER*/ 
+  /*BRUGES TIL INDEX.HTML*/ 
+    .grid-footer-farvet{
+      background-image: url(../image/menulinje1.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      display: grid;
+      grid-template-columns:30px 45% 30px 25% 30px;
+      margin-left: -9px;
+      margin-right: -9px;
+      padding-left: 5px;
+      padding-top: 40px;
+      margin-bottom: -30px;
+    }
+  /*-*/
+
+  /*BRUGES TIL OM-MIG.HTML, KONTAKT.HTML OG PROJEKTER.HTML*/ 
+    .grid-footer-hvid {
+      display: grid;
+      grid-template-columns:30px 45% 30px 25% 30px;
+      margin-left: -9px;
+      margin-right: -9px;
+      margin-bottom: -30px;
+      padding-left: 5px;
+      padding-top: 40px;
+    }
+  /*-*/
+
+                                                          /*GRID MAIN*/ 
+                                                    /*GRID BRUGES TIL FLERE*/
+  /*#FFFFFF BRUGES TIL HEADER*/ 
+    .grid-item {
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+  /*-*/ 
+
+  /*OVERSKRIFT PÅ OM-MIG.HTML, KONTAKT.HTML OG PROJEKTER.HTML*/ 
+      .grid--titel {
+      display: grid;
+      grid-template-columns: 12.5% auto 12.5%;
+      margin-left: -9px;
+      margin-right: -9px;
+    }
+  /*-*/
+
+  /*USYNLIG TEKST MED LINJE*/
+    .linjer {
+      text-align: center;
+      border-bottom: 1px solid #E3DDD5;
+    }
+  /*-*/ 
+
+  /*GRID OPSTILLING AF PROJEKTER.HTML OG OM-MIG.HTML*/ 
+    .grid-projekter-projekter {
+      display: grid;
+      grid-template-columns: 1px 100%;
+      margin-left: 9px;
+      margin-right: 9px;
+    }
+
+    @media screen and (min-width: 700px){
+      .grid-projekter-projekter{
+        display: grid;
+        grid-template-columns: 1% auto 1% auto 1%;
+      }
+    }
+
+    @media screen and (min-width: 900px){
+      .grid-projekter-projekter{
+        display: grid;
+        grid-template-columns: 
+        6.25% auto 6.25% auto 6.25%;
+        margin-left: -9px;
+        margin-right: -9px;
+      }
+    }
+  /*-*/
+
+  /*BREAK*/ 
+    .grid-projekter-break {
+      display: grid;
+      grid-template-columns: 12.5% auto 12.5%;
+      margin-left: -9px;
+      margin-right: -9px;
+    }
+  /*-*/
+
+                                                      /*GRID INDEX.HTML*/
+  /*OPBYGNING AF INTRO OM MIG PÅ FORSIDEN*/ 
+    .grid-main {
+      display: grid;
+      grid-template-columns:25% 75%;
+      margin-left: -9px;
+      margin-right: -9px;
+      margin-bottom: -30px;
+    }
+
+    @media screen and (min-width: 900px){
+      .grid-main{
+        margin-bottom: -130px;
+      }
+    }
+  /*-*/ 
+
+  /*#E3DDD5*/ 
+    .grid-item1 {
+      background-color: #E3DDD5;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .grid-item2 {
+      background-color: #E3DDD5;
+      height: 400px;
+      width: 300px;
+    }
+
+    .grid-item3 {
+      background-color: #E3DDD5;
+      height: 300px;
+      width: 300px;
+    }
+  /*-*/ 
+
+  /*OPBYGNING AF BILLEDLISTE OVER PROJEKTERNE PÅ FORSIDEN*/ 
+    .grid-projekter {
+      background-color: #E3DDD5;
+      display: grid;
+      grid-template-columns: auto;
+      margin-left: -9px;
+      margin-right: -9px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 700px){
+      .grid-projekter{
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: -9px;
+        margin-right: -9px;
+        justify-content: center;
+      }
+    }
+
+    @media screen and (min-width: 1100px){
+      .grid-projekter{
+        display: grid;
+        grid-template-columns: auto 300px auto 300px auto 300px auto;
+        margin-left: -9px;
+        margin-right: -9px;
+      }
+    }
+  /*-*/
+
+  /*OVERSKRIFT PÅ INDEX.HTML (BØLGEN)*/
+    .grid-projekter-titel-top {
+      background-image: url(../image/menulinje1.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: grid;
+      grid-template-columns: 12.5% auto 12.5%;
+      margin-bottom: -1px;
+      margin-left: -9px;
+      margin-right: -9px;
+      position: relative;
+    }
+  /*-*/
+
+  /*BREAK INDEN FOOTER (BØLGEN)*/
+    .grid-projekter-titel-end{
+      background-image: url(../image/menulinje.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: grid;
+      grid-template-columns: 12.5% auto 12.5%;
+      margin-bottom: -1px;
+      margin-left: -9px;
+      margin-right: -9px;
+      position: relative;
+    }
+  /*-*/
+
+                                                      /*GRID PROJEKTER.HTML*/
+  /*RULLE BILLEDER*/ 
+    .rulle{
+      overflow: auto;
+      white-space: nowrap;
+      width: 300px;
+      height: auto;
+    }
+  /*-*/
+
+                                                       /*GRID KONTAKT.HTML*/
+  /*OPBYGNING AF MAIN*/
+    .grid-kontakt {
+      display: grid;
+      grid-template-columns: auto;
+      margin-left: -9px;
+      margin-right: -9px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 700px){
+      .grid-kontakt{
+        display: grid;
+        grid-template-columns: 30px auto 5% auto 30px;
+        margin-left: -9px;
+        margin-right: -9px;
+      }
+    }
+  /*-*/
